@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.dfinal2.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="72dp"
+            android:layout_marginStart="68dp"
+
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical|center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/logo2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tcm"
+                android:text="YOUR ACCOUNTANT"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/ID"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputshape"
+                android:ems="10"
+                android:hint="   帳號"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/PWD"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputshape"
+                android:ems="10"
+                android:hint="   密碼"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="false" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    android:gravity="right"
+
+                    <CheckBox
+                        android:id="@+id/Logincheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="保持登入狀態"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="27dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:elevation="0dp"
+                    android:gravity="right|center"
+                    android:text="忘記密碼？"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loginbg"
+                android:text="登入"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/Register_bt"
+                    android:layout_width="50dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/holo_blue_light"
+                    android:elevation="0dp"
+                    android:gravity="right|center"
+                    android:onClick="Register"
+                    android:text="註冊"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/Register_bt"
+                    android:layout_alignBottom="@+id/Register_bt"
+                    android:layout_toStartOf="@+id/Register_bt"
+                    android:text="仍沒有帳戶嗎？"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.dfinal2.Resgister"
+    tools:showIn="@layout/activity_resgister">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/tcm"
+            android:text="YOUR ACCOUNTANT"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+
+                tools:layout_editor_absoluteX="173dp"
+                tools:layout_editor_absoluteY="329dp">
+
+                <EditText
+                    android:id="@+id/U_Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/textView14"
+                    android:background="@drawable/r_input"
+                    android:ems="10"
+                    android:hint="   Example@com.tw"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/U_Pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/U_Email"
+                    android:layout_below="@+id/U_Email"
+                    android:background="@drawable/r_input"
+                    android:ems="10"
+                    android:hint="   含英、數字且6字以上 "
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/U_Pwd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/U_Pwd"
+                    android:layout_below="@+id/U_Pwd"
+                    android:background="@drawable/r_input"
+                    android:ems="10"
+                    android:hint="   請再輸入一次密碼 "
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/U_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/U_Pwd1"
+                    android:layout_below="@+id/U_Pwd1"
+                    android:background="@drawable/r_input2"
+                    android:ems="10"
+                    android:hint="   王小明"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/U_Phone  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/U_Gender"
+                    android:layout_below="@+id/U_Gender"
+                    android:background="@drawable/r_input2"
+                    android:ems="10"
+                    android:hint="   0912345678"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/U_Birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/U_Phone  "
+                    android:layout_below="@+id/U_Phone  "
+                    android:background="@drawable/r_input2"
+                    android:ems="10"
+                    android:hint="   1987/06/05 "
+                    android:inputType="date" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/U_Pwd"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="17dp"
+                    android:text="帳號"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/U_Pwd"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="17dp"
+                    android:text="帳號"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/U_Pwd"
+                    android:layout_alignStart="@+id/textView8"
+                    android:text="密碼"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textView11"
+                    android:layout_alignParentStart="true"
+                    android:text="確認密碼"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/U_Name"
+                    android:layout_alignBottom="@+id/U_Name"
+                    android:layout_alignStart="@+id/textView9"
+                    android:text="姓名"
+                    android:textSize="22sp" />
+
+                <RadioGroup
+                    android:id="@+id/U_Gender"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignEnd="@+id/U_Name"
+                    android:layout_alignTop="@+id/textView13"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="女" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="男" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView11"
+                    android:layout_below="@+id/U_Name"
+                    android:layout_marginTop="16dp"
+                    android:text="性別"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/U_Birth"
+                    android:layout_alignStart="@+id/textView13"
+                    android:text="行動電話"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/U_Birth"
+                    android:layout_alignStart="@+id/textView14"
+                    android:text="生日"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView17"
+                    android:layout_below="@+id/textView17"
+                    android:layout_marginTop="13dp"
+                    android:text="家庭狀況"
+                    android:textSize="22sp" />
+
+                <RadioGroup
+                    android:id="@+id/U_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/U_Birth"
+                    android:layout_alignTop="@+id/textView19">
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="未婚" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="已婚育有" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView19"
+                    android:layout_toEndOf="@+id/U_Info"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="textPersonName"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editText12"
+                    android:layout_alignBottom="@+id/editText12"
+                    android:layout_toEndOf="@+id/editText12"
+                    android:text="子"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView19"
+                    android:layout_below="@+id/U_Info">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignBaseline="@+id/textView21"
+                        android:layout_alignBottom="@+id/textView21"
+                        android:layout_toStartOf="@+id/textView21"
+                        android:layout_weight="1"
+                        android:text="我已閱讀完服務條款與隱私權政策 "
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/R_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/loginbg"
+                        android:text="完成註冊"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/tcm"
+                        android:text="YOUR ACCOUNTANT"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
